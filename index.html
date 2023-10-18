@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="row1">
+      <div class="mainHeading" style="font-family: 'Roboto', sans-serif">
+        Welcome To My Tick Tack Toe Game
+      </div>
+    </div>
+    <div class="row2">
+      <div class="col1">
+        <div class="playerHeading" style="font-family: 'Roboto', sans-serif">
+          Player 1
+        </div>
+        <div class="myWeapons">
+          <img class="weapon cross" id="wpc1" src="./icons/cross.png" />
+          <img class="weapon cross" id="wpc2" src="./icons/cross.png" />
+          <img class="weapon cross" id="wpc3" src="./icons/cross.png" />
+        </div>
+      </div>
+      <div class="col2">
+        <table class="grid">
+          <tr class="gridRow1">
+            <td id="1" class="drop-target"></td>
+            <td id="2" class="drop-target"></td>
+            <td id="3" class="drop-target"></td>
+          </tr>
+          <tr class="gridRow2">
+            <td id="4" class="drop-target"></td>
+            <td id="5" class="drop-target"></td>
+            <td id="6" class="drop-target"></td>
+          </tr>
+          <tr class="gridRow3">
+            <td id="7" class="drop-target"></td>
+            <td id="8" class="drop-target"></td>
+            <td id="9" class="drop-target"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col3">
+        <div class="playerHeading" style="font-family: 'Roboto', sans-serif">
+          Player 2
+        </div>
+        <div class="myWeapons">
+          <img class="weapon tick" id="wpt1" src="./icons/tick.png" />
+          <img class="weapon tick" id="wpt2" src="./icons/tick.png" />
+          <img class="weapon tick" id="wpt3" src="./icons/tick.png" />
+        </div>
+      </div>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <div class="WinnerName" id="winply"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
